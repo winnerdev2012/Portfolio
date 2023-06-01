@@ -1,0 +1,56 @@
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
+@import "swiper/css/scrollbar";
+
+.swiper-portfolio {
+  padding-right: 250px;
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-portfolio {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 0px;
+  }
+}
+
+#switcher,
+#showSwitcher {
+  transition: 1s all;
+}
+#switcher.open,
+#showSwitcher.open {
+  margin-left: 0;
+}
+#showSwitcher.close {
+  margin-left: -500px;
+}
+#switcher ul li {
+  margin: 0 15px 15px 0;
+}
+
+.back-btn {
+  z-index: 11111;
+  margin-left: 0px;
+  position: fixed;
+  right: 0;
+  top: 220px;
+  background: #444;
+  border-left: 0;
+  font-size: 18px;
+  display: block;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 4px;
+  padding: 10px 16px 10px 16px;
+  cursor: pointer;
+  left: 0;
+  right: initial;
+  border-right: 0;
+  border-radius: 0 4px 4px 0;
+}
+
+.back-btn i {
+  font-size: 25px;
+  color: #fff;
+}
